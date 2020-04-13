@@ -105,7 +105,7 @@ namespace Virus_Checker
 
         private void reportABugToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("https://github.com/dansailorsav1/chekit/issues");
+            System.Diagnostics.Process.Start("https://github.com/gvasilakiss/ChekIt-Now/issues/new");
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)

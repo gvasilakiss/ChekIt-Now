@@ -33,8 +33,9 @@ namespace Virus_Checker
 
             var settings = new HaveIBeenPwnedClientSettings()
             {
-                ApiKey = "d91cb625d970470989710abfb88241fb",
-                ApplicationName = "Virus_Finder",
+                // API Key for HaveIBeenPwned 
+                ApiKey = "8018ed49965e45dfb536601dd806ee60",
+                ApplicationName = "ChekIt-Now",
             };
 
             using (var client = new HaveIBeenPwnedClient(settings))
@@ -103,8 +104,9 @@ namespace Virus_Checker
 
             var settings = new HaveIBeenPwnedClientSettings()
             {
-                ApiKey = "d91cb625d970470989710abfb88241fb", //Expired
-                ApplicationName = "ChekIt Now",
+                // API Key for HaveIBeenPwned 
+                ApiKey = "8018ed49965e45dfb536601dd806ee60",
+                ApplicationName = "ChekIt-Now",
             };
 
             using (var client = new HaveIBeenPwnedClient(settings))
@@ -229,7 +231,7 @@ namespace Virus_Checker
                 webRequest.ContentType = "application/json";
                 // 45dpfxecbjk2124tpxibbia9b9fh32oc9hkc3aphdjwcm0pj - MAIN API
                 webRequest.Headers["Key"] = "ip1rd56y7rwnx29n6mksm3xogomtt9nzx5s84etyhjrt52yb";
-                webRequest.UserAgent = "ChekIt";
+                webRequest.UserAgent = "ChekIt-Now";
 
                 // Read all data from the response and print it to MessageBox - For now
                 using (Stream s = webRequest.GetResponse().GetResponseStream())
@@ -528,7 +530,7 @@ namespace Virus_Checker
 
         private void reportABugToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("https://github.com/dansailorsav1/chekit/issues");
+            System.Diagnostics.Process.Start("https://github.com/gvasilakiss/ChekIt-Now/issues/new");
         }
 
         private void exitToolStripMenuItem_Click_1(object sender, EventArgs e)

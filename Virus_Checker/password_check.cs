@@ -56,8 +56,9 @@ namespace Virus_Checker
             // Create the client
             var settings = new HaveIBeenPwnedClientSettings
             {
-                ApiKey = "d91cb625d970470989710abfb88241fb",
-                ApplicationName = "Virus_Finder"
+                // API Key for HaveIBeenPwned 
+                ApiKey = "8018ed49965e45dfb536601dd806ee60",
+                ApplicationName = "ChekIt-Now",
             };
 
             using (var client = new HaveIBeenPwnedClient(settings))
@@ -143,7 +144,7 @@ namespace Virus_Checker
 
         private void reportABugToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("https://github.com/dansailorsav1/chekit/issues");
+            System.Diagnostics.Process.Start("https://github.com/gvasilakiss/ChekIt-Now/issues/new");
         }
 
         private void menuStrip2_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
