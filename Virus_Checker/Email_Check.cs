@@ -10,7 +10,6 @@ namespace Virus_Checker
 {
     public partial class Email_Check : Form
     {
-      
         public Email_Check()
         {
             InitializeComponent();
@@ -33,8 +32,8 @@ namespace Virus_Checker
 
             var settings = new HaveIBeenPwnedClientSettings()
             {
-                // API Key for HaveIBeenPwned 
-                ApiKey = "8018ed49965e45dfb536601dd806ee60",
+                // API Key for HaveIBeenPwned
+                ApiKey = "API_KEY",
                 ApplicationName = "ChekIt-Now",
             };
 
@@ -104,8 +103,8 @@ namespace Virus_Checker
 
             var settings = new HaveIBeenPwnedClientSettings()
             {
-                // API Key for HaveIBeenPwned 
-                ApiKey = "8018ed49965e45dfb536601dd806ee60",
+                // API Key for HaveIBeenPwned
+                ApiKey = "API_KEY",
                 ApplicationName = "ChekIt-Now",
             };
 
@@ -182,7 +181,7 @@ namespace Virus_Checker
                     foreach (var item in lstAddBreaches.Items)
                         sw.Write(item + Environment.NewLine);
 
-                MessageBox.Show(@"File saved successfully", "List saved",
+                MessageBox.Show(@"File saved successfully", "List Saved",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
@@ -193,7 +192,6 @@ namespace Virus_Checker
             lbl_Result.ResetText();
             lstAddBreaches.Show();
             lstAddBreaches.Items.Clear();
-
 
             string input = "https://emailrep.io/" + txtBox_pwned_Email.Text;
 
@@ -502,7 +500,6 @@ namespace Virus_Checker
             f4.ShowDialog();
         }
 
-        
         private void creditsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             credits newcredits = new credits();
@@ -543,5 +540,4 @@ namespace Virus_Checker
             }
         }
     }
-            
 }

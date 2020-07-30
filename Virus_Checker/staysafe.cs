@@ -1,52 +1,39 @@
 ﻿using System;
 using System.Windows.Forms;
-using System.Threading;
 
 namespace Virus_Checker
 {
     public partial class staysafe : Form
     {
-        
         public staysafe()
         {
             InitializeComponent();
-            
         }
-
-        
 
         private void staysafe_Load(object sender, EventArgs e)
         {
             this.CenterToScreen();
             // screen move
-           
+
             // Loop the circle to end at the percentage block
             for (int i = 1; i < 78; i++)
             {
                 circlepro_One.Value = i;
                 circlepro_One.Update();
-                
-
             }
 
             for (int i = 1; i < 56; i++)
             {
                 circlepro_Two.Value = i;
                 circlepro_Two.Update();
-                
-
             }
 
             for (int i = 1; i < 68; i++)
             {
                 circlepro_Three.Value = i;
                 circlepro_Three.Update();
-                
-
             }
         }
-
-        
 
         // menu item
         private void btn_Home_Click(object sender, EventArgs e)
@@ -56,6 +43,7 @@ namespace Virus_Checker
             f2.ShowDialog();
             Close();
         }
+
         // menu item
         private void btn_Pass_Click(object sender, EventArgs e)
         {
@@ -63,6 +51,7 @@ namespace Virus_Checker
             password f3 = new password();
             f3.ShowDialog();
         }
+
         // menu item
         private void btn_menu_pwned_Click(object sender, EventArgs e)
         {
@@ -70,7 +59,7 @@ namespace Virus_Checker
             Email_Check f1 = new Email_Check();
             f1.ShowDialog();
         }
-        
+
         private void toolStripMenuItem5_Click(object sender, EventArgs e)
         {
             AboutBox1 aboutbox = new AboutBox1();
@@ -87,7 +76,6 @@ namespace Virus_Checker
             }
         }
 
-        
         // This is the bottom left exit, for some reason the name won't update.
         private void button4_Click(object sender, EventArgs e)
         {
@@ -103,7 +91,6 @@ namespace Virus_Checker
         {
             credits newcredits = new credits();
             newcredits.ShowDialog();
-
         }
 
         private void staysafe_FormClosing(object sender, FormClosingEventArgs e)

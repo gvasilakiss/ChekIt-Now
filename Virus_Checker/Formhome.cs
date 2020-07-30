@@ -1,30 +1,22 @@
 ﻿using System;
 using System.Windows.Forms;
-using System.Diagnostics;
-using System.IO;
-using Microsoft.Win32;
 
 namespace Virus_Checker
 {
     public partial class Formhome : Form
     {
-   
         public Formhome()
         {
             InitializeComponent();
-
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             this.CenterToScreen();
-                        
         }
 
-        
         private void btn_Home_Click(object sender, EventArgs e)
         {
-            
         }
 
         // Closes the application
@@ -50,13 +42,12 @@ namespace Virus_Checker
             Email_Check f1 = new Email_Check();
             f1.ShowDialog();
             Close();
-
         }
 
         private void findBreachesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
         }
+
         // about us
         private void aboutUsToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -80,7 +71,6 @@ namespace Virus_Checker
 
         private void fileToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
         }
 
         private void creditsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -101,7 +91,6 @@ namespace Virus_Checker
         {
             Application.Exit();
         }
-
 
         private void reportABugToolStripMenuItem_Click(object sender, EventArgs e)
         {

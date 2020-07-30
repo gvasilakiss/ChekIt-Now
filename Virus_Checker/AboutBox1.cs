@@ -95,11 +95,11 @@ namespace Virus_Checker
                 return ((AssemblyCompanyAttribute)attributes[0]).Company;
             }
         }
-        #endregion
+
+        #endregion Assembly Attribute Accessors
 
         private void AboutBox1_Load(object sender, EventArgs e)
         {
-
         }
     }
 }

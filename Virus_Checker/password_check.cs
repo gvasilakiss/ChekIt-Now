@@ -2,13 +2,11 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
-using Virus_Checker.Properties;
 
 namespace Virus_Checker
 {
     public partial class password : Form
     {
-        
         public password()
         {
             InitializeComponent();
@@ -29,6 +27,7 @@ namespace Virus_Checker
             f2.ShowDialog();
             Close();
         }
+
         // menu item
         private void btn_menu_pwned_Click_1(object sender, EventArgs e)
         {
@@ -38,7 +37,7 @@ namespace Virus_Checker
             Close();
         }
 
-        //about us 
+        //about us
         private void toolStripMenuItem5_Click(object sender, EventArgs e)
         {
             AboutBox1 aboutbox = new AboutBox1();
@@ -56,7 +55,7 @@ namespace Virus_Checker
             // Create the client
             var settings = new HaveIBeenPwnedClientSettings
             {
-                // API Key for HaveIBeenPwned 
+                // API Key for HaveIBeenPwned
                 ApiKey = "8018ed49965e45dfb536601dd806ee60",
                 ApplicationName = "ChekIt-Now",
             };
@@ -105,7 +104,6 @@ namespace Virus_Checker
             f4.ShowDialog();
         }
 
-   
         // version box
         private void versionToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -149,7 +147,6 @@ namespace Virus_Checker
 
         private void menuStrip2_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
-
         }
     }
 }
