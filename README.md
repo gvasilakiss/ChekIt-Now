@@ -7,7 +7,7 @@
 Check the release pages and download the latest .exe file
 
 ```bash
-Download the chekitnow.exe and run it!
+Download the chekitnow.exe and run it.
 ```
 
 ## Usage
