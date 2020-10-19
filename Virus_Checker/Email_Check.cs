@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Net;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace Virus_Checker
 {
@@ -21,6 +22,8 @@ namespace Virus_Checker
             // screen move
             //this.Location = Screen.AllScreens[1].WorkingArea.Location;
         }
+
+        Regex EmailRx = new Regex("^\\w+([-+.']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*$"); //Regular expression for email validation
 
         // Check if email is pawned
         private async void button1_Click_1(object sender, EventArgs e)
@@ -46,7 +49,7 @@ namespace Virus_Checker
                         lbl_Result.ForeColor = System.Drawing.Color.FromArgb(234, 75, 46);
                         lbl_Result.Text = @"Input can't be empty, enter email to continue";
                     }
-                    else if (!txtBox_pwned_Email.Text.Contains("@"))
+                    else if (!EmailRx.IsMatch(txtBox_pwned_Email.Text))
                     {
                         lbl_Result.ForeColor = System.Drawing.Color.FromArgb(234, 75, 46);
                         lbl_Result.Text = @"Input is not in correct format, try again";
@@ -117,7 +120,7 @@ namespace Virus_Checker
                         lbl_Result.ForeColor = System.Drawing.Color.FromArgb(234, 75, 46);
                         lbl_Result.Text = @"Input can't be empty, enter email to continue";
                     }
-                    else if (!txtBox_pwned_Email.Text.Contains("@"))
+                    else if (!EmailRx.IsMatch(txtBox_pwned_Email.Text))
                     {
                         lbl_Result.ForeColor = System.Drawing.Color.FromArgb(234, 75, 46);
                         lbl_Result.Text = @"Input is not in correct format, try again";
@@ -200,7 +203,7 @@ namespace Virus_Checker
                 lbl_Result.ForeColor = System.Drawing.Color.FromArgb(234, 75, 46);
                 lbl_Result.Text = @"Input can't be empty, enter email to continue";
             }
-            else if (!txtBox_pwned_Email.Text.Contains("@"))
+            else if (!EmailRx.IsMatch(txtBox_pwned_Email.Text))
             {
                 lbl_Result.ForeColor = System.Drawing.Color.FromArgb(234, 75, 46);
                 lbl_Result.Text = @"Input is not in correct format, try again";
