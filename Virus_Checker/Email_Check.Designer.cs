@@ -1,6 +1,6 @@
 ﻿namespace Virus_Checker
 {
-    partial class Email_Check
+    partial class EmailCheck
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Email_Check));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmailCheck));
             this.btnPwned = new System.Windows.Forms.Button();
             this.txtBox_pwned_Email = new System.Windows.Forms.TextBox();
             this.lbl_Result = new System.Windows.Forms.Label();
@@ -295,7 +295,7 @@
             this.Controls.Add(this.btnPwned);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-            this.Name = "Email_Check";
+            this.Name = "EmailCheck";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Email_Check_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Email_Check_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);

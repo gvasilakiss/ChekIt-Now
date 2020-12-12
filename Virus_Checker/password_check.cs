@@ -5,9 +5,9 @@ using System.Windows.Forms;
 
 namespace Virus_Checker
 {
-    public partial class password : Form
+    public partial class Password : Form
     {
-        public password()
+        public Password()
         {
             InitializeComponent();
         }
@@ -32,7 +32,7 @@ namespace Virus_Checker
         private void btn_menu_pwned_Click_1(object sender, EventArgs e)
         {
             Hide();
-            Email_Check f1 = new Email_Check();
+            EmailCheck f1 = new EmailCheck();
             f1.ShowDialog();
             Close();
         }
@@ -100,7 +100,7 @@ namespace Virus_Checker
         private void btn_menu_info_Click(object sender, EventArgs e)
         {
             Hide();
-            staysafe f4 = new staysafe();
+            Staysafe f4 = new Staysafe();
             f4.ShowDialog();
         }
 
@@ -145,8 +145,15 @@ namespace Virus_Checker
             System.Diagnostics.Process.Start("https://github.com/gvasilakiss/ChekIt-Now/issues/new");
         }
 
-        private void menuStrip2_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        // When exit click display the following info
+        private void btnExitBottom_Click(object sender, EventArgs e)
         {
+            // Declare a DialogResult variable
+            DialogResult drReply = MessageBox.Show("Do you really want to exit?", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (drReply == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
     }
 }

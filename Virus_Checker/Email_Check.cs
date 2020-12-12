@@ -4,14 +4,14 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Net;
-using System.Windows.Forms;
 using System.Text.RegularExpressions;
+using System.Windows.Forms;
 
 namespace Virus_Checker
 {
-    public partial class Email_Check : Form
+    public partial class EmailCheck : Form
     {
-        public Email_Check()
+        public EmailCheck()
         {
             InitializeComponent();
         }
@@ -23,7 +23,7 @@ namespace Virus_Checker
             //this.Location = Screen.AllScreens[1].WorkingArea.Location;
         }
 
-        Regex EmailRx = new Regex("^\\w+([-+.']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*$"); //Regular expression for email validation
+        private Regex EmailRx = new Regex("^\\w+([-+.']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*$"); //Regular expression for email validation
 
         // Check if email is pawned
         private async void button1_Click_1(object sender, EventArgs e)
@@ -488,7 +488,7 @@ namespace Virus_Checker
         private void btn_Pass_Click(object sender, EventArgs e)
         {
             Hide();
-            password f3 = new password();
+            Password f3 = new Password();
             f3.ShowDialog();
         }
 
@@ -499,7 +499,7 @@ namespace Virus_Checker
         private void btn_menu_info_Click(object sender, EventArgs e)
         {
             Hide();
-            staysafe f4 = new staysafe();
+            Staysafe f4 = new Staysafe();
             f4.ShowDialog();
         }
 

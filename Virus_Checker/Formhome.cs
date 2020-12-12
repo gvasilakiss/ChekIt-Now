@@ -39,7 +39,7 @@ namespace Virus_Checker
         private void btn_menu_pwned_Click(object sender, EventArgs e)
         {
             Hide();
-            Email_Check f1 = new Email_Check();
+            EmailCheck f1 = new EmailCheck();
             f1.ShowDialog();
             Close();
         }
@@ -58,14 +58,14 @@ namespace Virus_Checker
         private void btn_Pass_Click(object sender, EventArgs e)
         {
             Hide();
-            password f3 = new password();
+            Password f3 = new Password();
             f3.ShowDialog();
         }
 
         private void btn_menu_info_Click(object sender, EventArgs e)
         {
             Hide();
-            staysafe f4 = new staysafe();
+            Staysafe f4 = new Staysafe();
             f4.ShowDialog();
         }
 
